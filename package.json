@@ -1,6 +1,6 @@
 {
   "name": "introduction-to-avro",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Supporting code for 'Introduction to Apache Avro' presentation in #12 Athens API Meetup",
   "main": "index.js",
   "scripts": {

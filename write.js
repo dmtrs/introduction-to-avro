@@ -11,14 +11,8 @@ var type = avro.parse({
 });
 
 fs.open('/tmp/out', 'w', function(err, fd) {
-  if (err) {
-    throw err;
-  }
-  var buf = type.toBuffer({kind: 'CAT', name: 'Albert'}); // Encoded buffer. 
-  fs.write(fd, buf, 0, buf.length, function(err, writte, buffer) {
-    console.log(buf.length);
-
-    fs.close(fd);
-  });
+  if (err) { throw err; }
+  
+  var buf = type.toBuffer({ kind: 'CAT', name: 'Albert' }); // Encoded buffer. 
+  fs.writeSync(fd, buf, 0, buf.length);
 });
-//var val = type.fromBuffer(buf);

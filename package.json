@@ -1,0 +1,26 @@
+{
+  "name": "introduction-to-avro",
+  "version": "0.0.1",
+  "description": "Supporting code for 'Introduction to Apache Avro' presentation in #12 Athens API Meetup",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node ./test/index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmtrs/introduction-to-avro.git"
+  },
+  "keywords": [
+    "Avro",
+    "Athens",
+    "API",
+    "Meetp",
+    "Examples"
+  ],
+  "author": "dmtrs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmtrs/introduction-to-avro/issues"
+  },
+  "homepage": "https://github.com/dmtrs/introduction-to-avro#readme"
+}

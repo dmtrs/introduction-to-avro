@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/dmtrs/introduction-to-avro/issues"
   },
-  "homepage": "https://github.com/dmtrs/introduction-to-avro#readme"
+  "homepage": "https://github.com/dmtrs/introduction-to-avro#readme",
+  "dependencies": {
+    "avsc": "^3.4.1"
+  }
 }

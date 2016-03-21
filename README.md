@@ -2,7 +2,14 @@ Introduction to Avro
 ====================
 Supporting code for 'Introduction to Apache Avro' presentation in [#12 Athens API Meetup](http://www.meetup.com/API-Athens/events/229037324/).
 
-#Structure
+##Requirements
+
+You will need Node Js to run the sample codes and to install the dependencies using npm:
+```
+$ npm install
+```
+
+##Structure
 
 ```
 .

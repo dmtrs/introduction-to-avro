@@ -1,0 +1,8 @@
+{
+  "namespace": "com.shop.common",
+  "type": "record",
+  "name": "Brand",
+  "fields": [
+    { "name": "name", "type": "string" }
+  ]
+}

@@ -1,18 +1,25 @@
-var avro = require('avsc');
 var fs = require('fs');
+var schemas = require('./registry');
 
-var type = avro.parse({
-  name: 'Pet',
-  type: 'record',
-  fields: [
-    {name: 'kind', type: {name: 'Kind', type: 'enum', symbols: ['CAT', 'DOG']}},
-    {name: 'name', type: 'string'}
-  ]
-});
+var obj = {
+  brand: { name: 'Nike' },
+  color: { name: 'black', hex: '#000000' }
+};
 
-fs.open('/tmp/out', 'w', function(err, fd) {
+fs.open('./shoe.example', 'w', function(err, fd) {
   if (err) { throw err; }
-  
-  var buf = type.toBuffer({ kind: 'CAT', name: 'Albert' }); // Encoded buffer. 
+
+  var buf = schemas.shoe.toBuffer(obj);
+
   fs.writeSync(fd, buf, 0, buf.length);
 });
+
+/**
+fs.open('/tmp/shoe.json', 'w', function(err, fd) {
+  if (err) { throw err; }
+  
+  var buf = new Buffer(JSON.stringify(obj));
+
+  fs.writeSync(fd, buf, 0, buf.length);
+});
+**/

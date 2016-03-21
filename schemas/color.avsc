@@ -1,0 +1,9 @@
+{
+  "namespace": "com.shop.common",
+  "type": "record",
+  "name": "Color",
+  "fields": [
+    { "name": "name", "type": "string" },
+    { "name": "hex", "type": "string" }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "namespace": "com.shop",
+  "namespace": "com.shop.v2",
   "type": "record",
   "name": "Shoe",
-  "aliases": [ "com.shop.ShoeV1" ],
+  "aliases": [ "com.shop.v1.Shoe" ],
   "fields": [
     { "name": "color", "type": "com.shop.common.Color" },
     { "name": "brand", "type": "com.shop.common.Brand" },

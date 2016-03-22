@@ -9,7 +9,7 @@ var obj = {
 fs.open('./shoe.example', 'w', function(err, fd) {
   if (err) { throw err; }
 
-  var buf = schemas.shoe.toBuffer(obj);
+  var buf = schemas.v1.shoe.toBuffer(obj);
 
   fs.writeSync(fd, buf, 0, buf.length);
 });

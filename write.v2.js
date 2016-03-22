@@ -1,5 +1,5 @@
 var fs = require('fs');
-var schemas = require('./registry.v2');
+var schemas = require('./registry');
 
 var obj = {
   brand: { name: 'Nike' },
@@ -10,7 +10,7 @@ var obj = {
 fs.open('./shoe.example', 'w', function(err, fd) {
   if (err) { throw err; }
 
-  var buf = schemas.shoe.v2.toBuffer(obj);
+  var buf = schemas.v2.shoe.toBuffer(obj);
 
   fs.writeSync(fd, buf, 0, buf.length);
 });

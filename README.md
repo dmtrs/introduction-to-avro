@@ -25,3 +25,21 @@ $ npm install
 Repository consists of some schema definitions found in `./schemas` directory and are parsed using [avsc](https://www.npmjs.com/package/avsc) node module in `./registry.js`.
 
 `write.js` & `read.js` are convinient scripts to demonstrate write/read binary files with the avro serialization.
+
+
+##Schema Evolution
+
+### V1
+```
+$ node write.v1.js
+$ node read.v1.js
+$ node read.v2.v1_compatible.js
+```
+
+### V2
+
+```
+$ node write.v2.js
+$ node read.v2.js
+$ node read.v1.v2_compatible.js
+```

@@ -14,12 +14,12 @@ fs.open('./shoe.example', 'w', function(err, fd) {
   fs.writeSync(fd, buf, 0, buf.length);
 });
 
-/**
-fs.open('/tmp/shoe.json', 'w', function(err, fd) {
+
+fs.open('./shoe.json.example', 'w', function(err, fd) {
   if (err) { throw err; }
   
   var buf = new Buffer(JSON.stringify(obj));
 
   fs.writeSync(fd, buf, 0, buf.length);
 });
-**/
+

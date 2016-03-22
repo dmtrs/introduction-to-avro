@@ -1,0 +1,9 @@
+{
+  "namespace": "com.shop.common",
+  "name": "Size",
+  "type": "record",
+  "fields": [
+    { "name": "system", "type": "com.shop.common.size.System", "default": "ER" },
+    { "name": "value", "type": "float", "default": 0.0 }
+  ]
+}

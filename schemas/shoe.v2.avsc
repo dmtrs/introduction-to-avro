@@ -1,0 +1,22 @@
+{
+  "namespace": "com.shop",
+  "type": "record",
+  "name": "Shoe",
+  "aliases": [ "com.shop.ShoeV1" ],
+  "fields": [
+    { "name": "color", "type": "com.shop.common.Color" },
+    { "name": "brand", "type": "com.shop.common.Brand" },
+    {
+      "name": "size",
+      "type": {
+        "name": "Size",
+        "type": "record",
+        "fields": [
+          { "name": "system", "type": "com.shop.common.size.System" },
+          { "name": "value", "type": "float" }
+        ]
+      },
+      "default": { "system": "NAN", "value": 0.0 }
+    }
+  ]
+}

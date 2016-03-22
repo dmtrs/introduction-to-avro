@@ -1,0 +1,6 @@
+{
+  "namespace": "com.shop.common.size",
+  "name": "System",
+  "type": "enum",
+  "symbols" : ["UK", "US", "ER", "CM", "NAN"]
+}

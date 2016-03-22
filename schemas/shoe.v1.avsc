@@ -1,0 +1,9 @@
+{
+  "namespace": "com.shop",
+  "type": "record",
+  "name": "ShoeV1",
+  "fields": [
+    { "name": "color", "type": "com.shop.common.Color" },
+    { "name": "brand", "type": "com.shop.common.Brand" }
+  ]
+}
